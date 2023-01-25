@@ -92,7 +92,7 @@ const PatientHistoryDoctorView = (props) => {
     }
     getdoctor();
     getpatient();
-  }, [dob]);
+  }, [dob, navigate, patient.dob, props]);
   return (
     <div className="col-span-10">
       {props.healthID.length === 12 ? (

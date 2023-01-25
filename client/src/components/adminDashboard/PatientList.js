@@ -24,7 +24,7 @@ const PatientList = (props) => {
       }
     }
     fetchPatientList();
-  }, [patientList]);
+  }, [navigate, patientList, props]);
 
   return (
     <div className="m-4 mt-4 font-poppins col-span-10">

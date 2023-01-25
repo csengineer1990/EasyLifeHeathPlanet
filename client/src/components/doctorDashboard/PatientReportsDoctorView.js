@@ -1,5 +1,4 @@
 import Footer from "../landingPage/Footer";
-import patient_profile from "../../assets/img/dashboard/patient2_pbl.png";
 import PatientReportCompoDoctorView from "./PatientReportCompoDoctorView";
 import { Link, useNavigate } from "react-router-dom";
 import doctor_profile from "../../assets/img/dashboard/doctor2.png";
@@ -94,7 +93,7 @@ const PatientReportsDoctorView = (props) => {
     }
     getdoctor();
     getpatient();
-  }, [dob]);
+  }, [dob, navigate, patient.dob, props]);
   return (
     <div className="col-span-10">
       {props.healthID.length === 12 ? (

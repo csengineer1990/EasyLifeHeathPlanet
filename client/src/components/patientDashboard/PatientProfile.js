@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import Footer from "../landingPage/Footer";
 import patient_card_profile from "../../assets/img/dashboard/admin-card-profile.png";
 import name from "../../assets/img/dashboard/patient-profile-name.png";
@@ -91,7 +92,7 @@ const PatientProfile = (props) => {
           </div>
           <div className="mt-6">
             <div className="flex ml-8 ">
-              <img src={name} className="h-8 w-8  " />
+              <img alt="img1" src={name} className="h-8 w-8  " />
               <div className="flex mt-1">
                 <h2 className="ml-2">{patient.name.firstName}</h2>
                 <h2 className="ml-2">{patient.name.middleName}</h2>
@@ -99,24 +100,24 @@ const PatientProfile = (props) => {
               </div>
             </div>
             <div className="flex ml-8 mt-4">
-              <img src={birth} className="h-5 w-5 ml-1" />
+              <img alt="img2" src={birth} className="h-5 w-5 ml-1" />
               <h2 className="ml-4">{convertDatetoString(patient.dob)}</h2>
             </div>
             <div className="flex ml-8 mt-4">
-              <img src={blood} className="h-6 w-6" />
+              <img alt="img3" src={blood} className="h-6 w-6" />
               <h2 className="ml-4">{patient.bloodGroup}</h2>
             </div>
             <div className="flex ml-8 mt-4">
-              <img src={phone} className="h-6 w-6 " />
+              <img alt="img4" src={phone} className="h-6 w-6 " />
               <h2 className="ml-4">+91</h2>
               <h2 className="ml-2">{patient.mobile}</h2>
             </div>
             <div className="flex ml-8 mt-4">
-              <img src={mail} className="h-6 w-5 " />
+              <img alt="img4" src={mail} className="h-6 w-5 " />
               <h2 className="ml-4 ">{patient.email}</h2>
             </div>
             <div className="flex ml-8 mt-4">
-              <img src={healthid} className="h-6 w-5 " />
+              <img alt="img5" src={healthid} className="h-6 w-5 " />
               <h2 className="ml-4">{patient.healthID}</h2>
             </div>
           </div>
@@ -124,7 +125,7 @@ const PatientProfile = (props) => {
         <div className="my-2">
           <div className="p-8 m-2 bg-white shadow-md w-2/3 rounded-md">
             <div className="flex mt-3">
-              <img src={address} className="h-7 w-8" />
+              <img alt="img6" src={address} className="h-7 w-8" />
               <div className="ml-4">
                 <h2>
                   {" "}
@@ -138,24 +139,24 @@ const PatientProfile = (props) => {
               Emergency Contact Details
             </h1>
             <div className="flex mt-4 ">
-              <img src={name} className="h-8 w-8" />
+              <img alt="img7" src={name} className="h-8 w-8" />
               <h1 className="mx-2"> {patient.contactPerson.name.firstName}</h1>
               <h1 className="mx-2">{patient.contactPerson.name.surName}</h1>
             </div>
 
             <div className="flex mt-3">
-              <img src={phone} className="w-6 h-6 " />
+              <img alt="img8" src={phone} className="w-6 h-6 " />
               <h1 className="ml-2 ">+91-</h1>
               <h1 className="mx-2">{patient.contactPerson.mobile}</h1>
             </div>
             <div className="flex mt-3">
-              <img src={mail} className="w-5 h-6 " />
+              <img alt="img9" src={mail} className="w-5 h-6 " />
 
               <h1 className="mx-4">{patient.contactPerson.email}</h1>
             </div>
 
             <div className="flex mt-6">
-              <img src={address} className="h-7 w-8" />
+              <img alt="img10" src={address} className="h-7 w-8" />
               <div className="ml-4">
                 <h2>
                   {" "}

@@ -22,7 +22,7 @@ const DoctorList = (props) => {
       }
     }
     fetchDoctorList();
-  }, [doctorList]);
+  }, [doctorList, navigate, props]);
 
   return (
     <div className="m-4 mt-4 font-poppins col-span-10">

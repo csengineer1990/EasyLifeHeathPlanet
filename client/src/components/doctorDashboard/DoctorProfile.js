@@ -1,5 +1,3 @@
-import Footer from "../landingPage/Footer";
-
 import patient_card_profile from "../../assets/img/dashboard/admin-card-profile.png";
 import name from "../../assets/img/dashboard/patient-profile-name.png";
 import birth from "../../assets/img/dashboard/patient-profile-birth.png";
@@ -16,7 +14,6 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const DoctorProfile = (props) => {
-  const navigate = useNavigate();
   const [doctor, setDoctor] = useState({
     name: {
       firstName: "",
@@ -91,7 +88,7 @@ const DoctorProfile = (props) => {
           </div>
           <div className="mt-6">
             <div className="flex ml-8 ">
-              <img src={name} className="h-8 w-8  " />
+              <img alt="img3" src={name} className="h-8 w-8  " />
               <div className="flex mt-1">
                 <h2 className="ml-2">Dr.</h2>
                 <h2 className="ml-2">{doctor.name.firstName}</h2>
@@ -100,20 +97,20 @@ const DoctorProfile = (props) => {
               </div>
             </div>
             <div className="flex ml-8 mt-4">
-              <img src={birth} className="h-5 w-5 ml-1" />
+              <img alt="img4" src={birth} className="h-5 w-5 ml-1" />
               <h2 className="ml-4">{convertDatetoString(doctor.dob)}</h2>
             </div>
             <div className="flex ml-8 mt-4">
-              <img src={blood} className="h-6 w-6" />
+              <img alt="img5" src={blood} className="h-6 w-6" />
               <h2 className="ml-4">{doctor.bloodGroup}</h2>
             </div>
             <div className="flex ml-8 mt-4">
-              <img src={phone} className="h-6 w-6 " />
+              <img alt="img6" src={phone} className="h-6 w-6 " />
               <h2 className="ml-4">+91</h2>
               <h2 className="ml-2">{doctor.mobile}</h2>
             </div>
             <div className="flex ml-8 mt-4">
-              <img src={mail} className="h-6 w-5 " />
+              <img alt="img6" src={mail} className="h-6 w-5 " />
               <h2 className="ml-4 ">{doctor.email}</h2>
             </div>
           </div>
@@ -121,7 +118,7 @@ const DoctorProfile = (props) => {
         <div className="my-2">
           <div className="p-8 m-2 bg-white shadow-md w-2/3 rounded-md">
             <div className="flex mt-3">
-              <img src={home} className="h-6 w-6" />
+              <img alt="img7" src={home} className="h-6 w-6" />
               <div className="ml-4">
                 <h2>
                   {`${doctor.address.building},  ${doctor.address.city},  ${doctor.address.taluka},  ${doctor.address.district},  ${doctor.address.state}-  ${doctor.address.pincode}`}
@@ -129,7 +126,7 @@ const DoctorProfile = (props) => {
               </div>
             </div>
             <div className="flex mt-4">
-              <img src={degree} className="h-6 w-6" />
+              <img alt="img8" src={degree} className="h-6 w-6" />
               <h1 className="ml-4">
                 {doctor.education.map((i) => {
                   return `${i.degree}  `;
@@ -137,7 +134,7 @@ const DoctorProfile = (props) => {
               </h1>
             </div>
             <div className="flex mt-4">
-              <img src={speciality} className="h-6 w-6" />
+              <img alt="img9" src={speciality} className="h-6 w-6" />
               <h1 className="ml-4">
                 {doctor.specialization.map((i) => {
                   return `${i.special}  `;
@@ -150,12 +147,12 @@ const DoctorProfile = (props) => {
               Hospital Details
             </h1>
             <div className="flex mt-4 ">
-              <img src={hospital} className="h-6 w-6" />
+              <img alt="img10" src={hospital} className="h-6 w-6" />
               <h1 className="ml-4"> {doctor.org}</h1>
             </div>
 
             <div className="flex mt-3">
-              <img src={hospital_contact} className="w-5 h-5 " />
+              <img alt="img11" src={hospital_contact} className="w-5 h-5 " />
 
               <h1 className="ml-4">{doctor.orgNumber}</h1>
             </div>
@@ -166,7 +163,7 @@ const DoctorProfile = (props) => {
             </div> */}
 
             <div className="flex mt-6">
-              <img src={address} className="h-7 w-8" />
+              <img alt="img12" src={address} className="h-7 w-8" />
               <div className="ml-4 ">
                 <h2>
                   {`${doctor.orgAddress.building},  ${doctor.orgAddress.city},  ${doctor.orgAddress.taluka},  ${doctor.orgAddress.district},  ${doctor.orgAddress.state}-  ${doctor.orgAddress.pincode}`}

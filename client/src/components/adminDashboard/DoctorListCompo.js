@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import delete_btn from "../../assets/img/dashboard/delete.png";
 
@@ -47,7 +46,7 @@ const DoctorListCompo = (props) => {
         className="flex items-center bg-primary w-24 h-8 rounded font-bold shadow hover:bg-bgsecondary"
         onClick={deleteDoctor}
       >
-        <img src={delete_btn} className="h-4 mx-2"></img>Delete
+        <img alt="img1" src={delete_btn} className="h-4 mx-2"></img>Delete
       </button>
     </div>
   );
