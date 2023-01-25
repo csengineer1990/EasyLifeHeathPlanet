@@ -43,6 +43,15 @@ app.use(patientRoutes);
 app.use(adminRoutes);
 app.use(logoutRoute);
 
+app.use(express.static(path.join(__dirname, "./client/build")));
+app.get("*", function (_, res) {
+  res.sendFile(
+    path.join(__dirname, "./client/build/index.html"),
+    function (err) {
+      res.status(500).send(err);
+    }
+  );
+});
 // if (process.env.NODE_ENV == "production") {
 //   app.use(express.static("client/build"));
 //   const path = require("path");
