@@ -9,7 +9,6 @@ const doctorRoute = require("./routes/doctorRoute");
 const adminRoutes = require("./routes/adminRoutes");
 const logoutRoute = require("./routes/logoutRoute");
 const cors = require("cors");
-const path = require("path");
 const app = express();
 
 dotenv.config({ path: "./config.env" });
@@ -26,7 +25,7 @@ mongoose
   .connect(dbURI)
   .then((result) => {
     app.listen(port);
-    console.log("connected to db and listening at port " + port);
+    console.log("connected to db and listening at port 5000");
   })
   .catch((err) => {
     app.listen(port);
@@ -53,6 +52,7 @@ app.use(logoutRoute);
 //     }
 //   );
 // });
+
 // if (process.env.NODE_ENV == "production") {
 //   app.use(express.static("client/build"));
 //   const path = require("path");

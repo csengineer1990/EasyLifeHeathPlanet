@@ -1,6 +1,5 @@
-/node_modules
-
+node_modules
+config.env
 npm-debug.log
 .nyc
-
 .DS_Store
