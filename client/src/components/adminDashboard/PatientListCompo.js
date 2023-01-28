@@ -8,7 +8,7 @@ const PatientListCompo = (props) => {
   useEffect(() => {
     const date = new Date(props.patient.dob);
     setDob(`${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`);
-  }, [props.patient.dob]);
+  }, []);
 
   const deletePatient = async () => {
     const res = await fetch(`/deletepatient/${props.healthID}`, {
@@ -48,7 +48,7 @@ const PatientListCompo = (props) => {
           className="flex items-center bg-primary w-24 h-8 rounded font-bold shadow hover:bg-bgsecondary"
           onClick={deletePatient}
         >
-          <img alt="img2" src={delete_btn} className="h-4 mx-2"></img>Delete
+          <img src={delete_btn} className="h-4 mx-2"></img>Delete
         </button>
       </div>
     </div>

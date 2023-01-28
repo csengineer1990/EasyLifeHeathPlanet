@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import DoctorListCompo from "./DoctorListCompo";
@@ -22,7 +23,7 @@ const DoctorList = (props) => {
       }
     }
     fetchDoctorList();
-  }, [doctorList, navigate, props]);
+  }, [doctorList]);
 
   return (
     <div className="m-4 mt-4 font-poppins col-span-10">

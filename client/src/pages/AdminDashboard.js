@@ -24,7 +24,7 @@ const AdminDashboard = (props) => {
       setAdminEmail(data.admin.email);
     }
     fetchAdmin();
-  }, [navigate, props]);
+  }, []);
 
   return (
     <div className="full-body col-span-10">

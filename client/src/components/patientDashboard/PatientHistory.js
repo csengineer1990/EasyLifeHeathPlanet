@@ -76,7 +76,7 @@ const PatientHistory = (props) => {
       }
     }
     getpatient();
-  }, [dob, navigate, patient.dob, props]);
+  }, [dob]);
   return (
     <div className="col-span-10">
       <div className=" px-12">

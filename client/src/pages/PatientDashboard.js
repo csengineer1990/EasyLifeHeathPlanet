@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 const PatientDashboard = (props) => {
   const navigate = useNavigate();
 
-  const [dob] = useState("01/01/2023");
+  const [dob, setDob] = useState("01/01/2006");
   const [patient, setPatient] = useState({
     name: {
       firstName: "",
@@ -79,7 +79,7 @@ const PatientDashboard = (props) => {
       }
     }
     getpatient();
-  }, [dob, navigate, props]);
+  }, [dob]);
 
   return (
     <div className="full-body col-span-10 h-screen">

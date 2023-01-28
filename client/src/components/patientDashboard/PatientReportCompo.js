@@ -26,7 +26,7 @@ const PatientReportCompo = (props) => {
         onClick={props.setPrescriptionID(props.prescription._id)}
       >
         <div className=" flex  justify-center bg-primary py-1 px-3 rounded font-semibold font-poppins shadow-sm hover:bg-bgsecondary w-2/4   ">
-          <img alt="img3" src={eye} className="h-4 my-auto"></img>
+          <img src={eye} className="h-4 my-auto"></img>
           <button className="font-bold ml-2">Preview </button>
         </div>
       </Link>

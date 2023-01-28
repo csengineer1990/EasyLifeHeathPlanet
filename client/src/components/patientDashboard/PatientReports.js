@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 const PatientReports = (props) => {
   const navigate = useNavigate();
-  const [dob, setDob] = useState("01/01/2023");
+  const [dob, setDob] = useState("01/01/2006");
   const [patient, setPatient] = useState({
     name: {
       firstName: "",
@@ -75,7 +75,7 @@ const PatientReports = (props) => {
       }
     }
     getpatient();
-  }, [dob, navigate, patient.dob, props]);
+  }, [dob]);
   return (
     <div className="col-span-10">
       <div className=" px-12">
