@@ -9,6 +9,7 @@ const doctorRoute = require("./routes/doctorRoute");
 const adminRoutes = require("./routes/adminRoutes");
 const logoutRoute = require("./routes/logoutRoute");
 const cors = require("cors");
+const bodyParser = require("body-parser");
 const app = express();
 
 dotenv.config({ path: "./config.env" });
