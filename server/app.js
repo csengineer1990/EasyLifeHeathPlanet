@@ -21,11 +21,25 @@ app.use(cookieParser());
 const dbURI = process.env.DATABASE;
 const port = process.env.PORT || 5000;
 
+// Middlewares
+app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://easylife-healthplanet.onrender.com",
+    ],
+    credentials: true,
+  })
+);
+
 mongoose
   .connect(dbURI)
   .then((result) => {
     app.listen(port);
-    console.log("connected to db and listening at port 5000");
+    console.log("connected to db and listening at port " + port);
   })
   .catch((err) => {
     app.listen(port);
